@@ -1,0 +1,38 @@
+[package]
+name = "symfwebapi"
+version = "0.2.2620"
+edition = "2021"
+rust-version = "1.81"
+description = "Rust client for Symfonia WebAPI."
+readme = "README.md"
+license = "BSD-3-Clause"
+authors = ["Maciej Pondo"]
+repository = "https://github.com/maku2903/symf-webapi-rs"
+homepage = "https://github.com/maku2903/symf-webapi-rs"
+documentation = "https://docs.rs/symfwebapi"
+keywords = ["symfonia", "webapi", "sdk", "erp"]
+categories = ["api-bindings", "network-programming"]
+include = [
+    "Cargo.toml",
+    "Cargo.lock",
+    "README.md",
+    "LICENSE",
+    "src/**",
+]
+
+[dependencies]
+async-trait = "0.1"
+chrono = { version = "0.4", features = ["serde"] }
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls"] }
+rust_decimal = { version = "1", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tracing = "0.1"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["sync", "time"] }
+
+[package.metadata.docs.rs]
+all-features = false

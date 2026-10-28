@@ -1,0 +1,5 @@
+pub mod i_fk_document_attachments_controller;
+pub mod i_fk_document_links_controller;
+pub mod i_fk_documents_business_issue_controller;
+pub mod i_fk_documents_controller;
+pub mod i_fk_documents_issue_controller;

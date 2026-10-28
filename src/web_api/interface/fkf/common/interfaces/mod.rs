@@ -1,0 +1,9 @@
+pub mod i_fk_countries_controller;
+pub mod i_fk_currencies_controller;
+pub mod i_fk_currencies_tables_controller;
+pub mod i_fk_regions_controller;
+pub mod i_fk_tax_offices_controller;
+pub mod i_fk_vat_rates_controller;
+pub mod i_fk_vat_register_markers_controller;
+pub mod i_fk_vat_registers_controller;
+pub mod i_fk_years_controller;
